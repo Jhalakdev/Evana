@@ -30,7 +30,6 @@ export default function LatestProjects() {
     return <div className={latestcss.latestProjectSection}>
         <div className={latestcss.latestProjectWrapper}>
             <div className={latestcss.text}>
-                <p>OUR GLOBAL WORK INDUSTRIES</p>
                 <h2>Latest Projects</h2>
             </div>
             <div className={latestcss.projects}>
@@ -39,23 +38,20 @@ export default function LatestProjects() {
                     <div className={latestcss.projectInfo}>
                         <span>Building</span>
                         <h2>Hospital Project</h2>
-                        <p>Plaza Road</p>
                     </div>
                 </div>
                 <div className={latestcss.project}>
                     <img src='/Project2.jpg' />
                     <div className={latestcss.projectInfo}>
                         <span>Building</span>
-                        <h2>Kantilal Residential Building with Swimming Pool</h2>
-                        <p>Kantilal</p>
+                        <h2>Residential Project</h2>
                     </div>
                 </div>
                 <div className={latestcss.project}>
                     <img src='/Project3.jpg' />
                     <div className={latestcss.projectInfo}>
                         <span>Building</span>
-                        <h2>Tripudana Residential Building</h2>
-                        <p>Tripudana</p>
+                        <h2>Residential Building</h2>
                     </div>
                 </div>
 

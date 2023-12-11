@@ -54,8 +54,8 @@ export default function Accordion() {
                     </div>
                     <div className={acss.ps}>
 
-                        <p>{data[0].question}</p>
-                        <p id="content1">{data[0].answer}</p>
+                        <p>1. What exactly does Evana Infratech do?</p>
+                        <p id="content1">Evana Infratech is basically a stop solution for all your construction-related needs. For example, say you have purchased land and now you want to construct any type of building over it like a House, bungalow, Hospital, mall, etc. Evana Infratech will construct every inch of your building and will hand over the key to you. </p>
                     </div>
                 </div>
                 <div className={acss.card} onClick={() => toggleAccordion(2)}>
@@ -64,8 +64,8 @@ export default function Accordion() {
                     </div>
                     <div className={acss.ps}>
 
-                        <p>{data[1].question}</p>
-                        <p id='content2'>{data[1].answer}</p>
+                        <p>2. Which types of material does Evana Infratech use?</p>
+                        <p id='content2'>We have different packages based on material selection. We can use any material based on your choices and preferences. We give you a standard quotation, where we mention all the materials and brands. For example, steel of Tata, Cement of ACC, paint of Asian, etc. However, clients have the liberty to choose materials and brands of their choice.</p>
                     </div>
                 </div>
                 <div className={acss.card} onClick={() => toggleAccordion(3)}>
@@ -74,8 +74,8 @@ export default function Accordion() {
                     </div>
                     <div className={acss.ps}>
 
-                        <p>{data[2].question}</p>
-                        <p id='content3'>{data[2].answer}</p>
+                        <p>3. What will be the total cost of my building construction?</p>
+                        <p id='content3'>The cost of any building can be precisely calculated only after analysis of drawings and the requirements of the client. However, on a very broad basis, the rate varies from Rs 1600 per square feet to Rs 2000 per Square feet. Rates can even be higher depending upon different permutations and combinations. Refer to the package session for more information.</p>
                     </div>
                 </div>
                 <div className={acss.card} onClick={() => toggleAccordion(4)}>
@@ -84,8 +84,8 @@ export default function Accordion() {
                     </div>
                     <div className={acss.ps}>
 
-                        <p>{data[3].question}</p>
-                        <p id='content4'>{data[3].answer}</p>
+                        <p>4. How cost of the building is calculated?</p>
+                        <p id='content4'>The total cost of the building is calculated from the casted slab. For example, if the quoted rate is Rs 1700 per square feet and the total slab of the building is 1000 Square Feet then the final rate of the building shall be Rs 1700000 plus additional charges.</p>
                     </div>
                 </div>
                 <div className={acss.card} onClick={() => toggleAccordion(5)}>
@@ -94,8 +94,8 @@ export default function Accordion() {
                     </div>
                     <div className={acss.ps}>
 
-                        <p>{data[4].question}</p>
-                        <p id='content5'>{data[4].answer}</p>
+                        <p>5. What are additional/extra charges?</p>
+                        <p id='content5'>Some parts of the buildings have variations depending upon multiple factors like soil conditions, types of facade, boundary walls, etc. In a crude sense, any structure of the building that is outside the slab of the building taken for calculation is taken under the head of additional cost. As of today, some items under extra costs are soil filing, mumty slab, landscaping, boundary wall with gate, any structure outside the slab, any materials used in the facade other than concrete, cement and paint.</p>
                     </div>
                 </div>
 

@@ -52,13 +52,9 @@ export default function InquiryForm() {
                 <input type='number' placeholder='Phone' name='phone' />
                 <select>
                     <option value>Select your service</option>
-                    <option value>Architecture</option>
-                    <option value>Renovation</option>
-                    <option value>Construction</option>
-                    <option value>Interior & Exterior</option>
-                    <option value>Chemical Research</option>
-                    <option value>Petroleum & Gas</option>
-                    <option value>Other Services</option>
+                    <option value>Complete Construction</option>
+                    <option value>Complete Interior</option>
+                    <option value>Designing and Planning</option>
                 </select>
                 <textarea rows={5} placeholder='Message' name='message'></textarea>
                 <button onClick={handleSubmit}>REQUEST A QUOTE</button>

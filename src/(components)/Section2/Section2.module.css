@@ -126,7 +126,7 @@
 .aboutP {
     margin: 30px 0;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -138,6 +138,7 @@
 .aboutP p {
     font-weight: 600;
     font-size: 18px;
+    text-align: justify;
 }
 
 .aboutImage img {
@@ -147,8 +148,9 @@
 }
 
 .aboutText>p {
-    color: grey;
-    font-weight: 400;
+    color: black;
+    text-align: justify;
+    font-weight: 600;
     line-height: 150%;
 }
 

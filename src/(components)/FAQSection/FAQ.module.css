@@ -1,0 +1,64 @@
+.section {
+    width: 100%;
+    height: max-content;
+    padding: 5rem 0;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+}
+
+.wrapper h1 {
+    font-size: 60px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translate(0, 20px);
+}
+
+.listContainer {
+    margin: 2rem 0;
+}
+
+.listContainer ol li {
+    list-style: none;
+    padding: 20px 0;
+    transform: translate(0, 20px);
+    opacity: 0;
+}
+
+.listContainer ol li h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.listContainer ol li p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media screen and (width<1100px) {
+    .wrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .wrapper {
+        width: 800px;
+    }
+    .wrapper h1{
+        font-size: 5dvw;
+    }
+    .listContainer{
+        margin: 0.5rem 0;
+    }
+}
+@media screen and (width<800px) {
+    .wrapper{
+        width: 95%;
+    }
+    .wrapper h1{
+        font-size: 7dvw;
+    }
+}

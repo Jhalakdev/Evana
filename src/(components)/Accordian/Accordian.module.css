@@ -1,0 +1,143 @@
+.section {
+    width: 100%;
+    height: max-content;
+    padding: 2rem 0;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    height: max-content;
+}
+
+.accordian {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.accordian h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card {
+    position: relative;
+    /* height: max-content; */
+    overflow: hidden;
+    width: 100%;
+    /* padding: 10px; */
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    cursor: pointer;
+    transform: translate(0, 20px);
+    opacity: 0;
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -90deg;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.ps {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ps p:nth-of-type(1) {
+    min-height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+.ps p:nth-of-type(2) {
+    display: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+    display: block !important;
+}
+
+.card:nth-of-type(1) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid grey;
+}
+
+.card:nth-last-of-type(1) {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.wrapper button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background: var(--red);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (width<1100px) {
+    .wrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .wrapper {
+        width: 800px;
+    }
+}
+
+@media screen and (width<800px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .accordian {
+        width: 80%;
+        margin: auto;
+    }
+
+    .wrapper button {
+        width: 80%;
+        margin: 20px 10%;
+        /* margin:auto; */
+        /* margin-top: 20px; */
+    }
+}
+
+@media screen and (width<480px) {
+    .accordian {
+        width: 95%;
+    }
+
+    .wrapper button {
+        width: 95%;
+        margin: 20px 2.5%;
+    }
+}

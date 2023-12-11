@@ -1,0 +1,200 @@
+.serviceSection {
+    width: 100%;
+    height: max-content;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.serviceWrapper {
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+.serviceBackground {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    z-index: 0;
+    background: #F3F5F6;
+}
+
+.text {
+    text-align: center;
+    opacity: 0;
+    transform: translate(0, 20px);
+}
+
+.text p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FC5E28;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 38px;
+}
+
+.services {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.service {
+    background: white;
+    box-shadow: 0 0px 1px grey;
+    height: 500px;
+    width: 100%;
+    margin: 40px auto;
+    padding-bottom: 3rem;
+    position: relative;
+    transform: translate(0, 20px);
+    opacity: 0;
+}
+
+.serviceImage {
+    height: 200px;
+    width: calc(100% - 30px);
+    margin: 15px auto;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.serviceImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.serviceIcon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    transform: translate(0, -50%);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceIcon img {
+    filter: brightness(0.5);
+    fill: #FC5E28;
+    height: 60%;
+    width: 60%;
+    object-fit: cover;
+}
+
+.serviceText {
+    transform: translate(0, -15%);
+    text-align: center;
+}
+
+.serviceText h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.button {
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.service:hover .button button {
+    background: #FC5E28;
+}
+
+.button button {
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 2.5px;
+    padding: 15px 0;
+    width: 100%;
+    background: #040e26;
+    cursor: pointer;
+}
+
+.serviceWrapper a button {
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--red);
+}
+
+.serviceText p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    color: grey;
+}
+
+@media screen and (width<1100px) {
+    .serviceWrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .serviceWrapper {
+        width: 800px;
+    }
+}
+
+@media screen and (width<800px) {
+    .serviceWrapper {
+        width: 80%;
+        gap: 0px;
+    }
+
+    .services {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .text p {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (width<480px) {
+    .serviceWrapper {
+        width: 100%;
+    }
+
+    .services {
+        width: 95%;
+    }
+}

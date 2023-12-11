@@ -1,0 +1,149 @@
+.latestProjectSection {
+    width: 100%;
+    padding: 5rem 0;
+    height: max-content;
+    background: white;
+}
+
+.latestProjectWrapper {
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text {
+    text-align: center;
+    transform: translate(0, 20px);
+    opacity: 0;
+}
+
+.text p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FC5E28;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 38px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+
+}
+
+.project {
+    height: 250px;
+    width: 100%;
+    /* margin: 40px; */
+    position: relative;
+    transform: translate(0, 20px);
+    opacity: 0;
+}
+
+.project img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.projectInfo {
+    width: 80%;
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 1px 10px grey;
+
+}
+
+.projectInfo span {
+    font-size: 12px;
+    color: #FC5E28;
+    font-weight: 800;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background: rgba(189, 189, 189, 0.7);
+}
+
+.projectInfo p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(90, 90, 90);
+    font-weight: 600;
+}
+
+.projectInfo h2 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.project:hover .projectInfo {
+    background: #FC5E28;
+}
+
+.project:hover h2 {
+    color: white;
+}
+
+.project:hover p {
+    color: white;
+}
+
+.project:hover span {
+    background: #ff6f3f;
+    color: white;
+}
+
+@media screen and (width<1100px) {
+    .latestProjectWrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .latestProjectWrapper {
+        width: 800px;
+    }
+}
+
+@media screen and (width<800px) {
+    .latestProjectWrapper {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .text p {
+        margin: 0;
+    }
+
+    .projects {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+    }
+
+    .project {
+        height: 300px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (width<480px) {
+    .projects {
+        width: 95%;
+    }
+}

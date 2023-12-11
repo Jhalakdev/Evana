@@ -1,0 +1,21 @@
+:root {
+  --red: #FC5E28;
+  --back: #040E26;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
+} */
+
+body {
+  height: max-content;
+  width: 100dvw;
+  overflow-x: hidden;
+}

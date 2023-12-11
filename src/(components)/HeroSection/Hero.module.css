@@ -124,10 +124,15 @@
 }
 
 @media screen and (width<480px) {
-    .heroText h1{
+    .heroText h1 {
         width: 80%;
     }
-    .heroText p{
+
+    .heroText p {
         width: 90%;
+    }
+
+    .heroSection {
+        height: 35dvh;
     }
 }

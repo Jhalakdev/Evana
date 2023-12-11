@@ -290,6 +290,7 @@
 @media screen and (width<900px) {
     .upper {
         width: 90%;
+        height: max-content;
         transform: translate(0);
     }
 

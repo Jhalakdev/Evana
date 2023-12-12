@@ -1,7 +1,7 @@
 'use client'
 import { Copyright, CustomHero, Footer, Navbar, Section3, Testimonial } from "@/(components)";
 import LocoScroll from "@/(utils)/LocomotiveScroll";
-import { OurTeam, Section2 } from "./(components)";
+import { Content, OurTeam, Section2 } from "./(components)";
 
 export default function About() {
     LocoScroll(true);
@@ -9,6 +9,7 @@ export default function About() {
         <Navbar />
         <CustomHero h1={" > ABOUT >"} p={"ABOUT US"} imgSrc={'/Construction.jpg'} />
         <Section2 />
+        {/* <Content /> */}
         <Section3 />
         <OurTeam />
         <Testimonial />

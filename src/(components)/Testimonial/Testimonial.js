@@ -53,7 +53,7 @@ export default function Testimonial() {
         <div className={testcss.wrapper}>
             <div className={testcss.text}>
                 <span>READ TESTIMONIALS</span>
-                <h2>Evana Infratech, a unit of K D Groups provides all construction-related stuffs under one roof. The company takes care of all the steps of construction starting from basic architectural designs to the stage of finishing. We provide ready-to-move buildings built up of best quality construction materials at budget-friendly expenses. With Evana Infratech, you just need to look after the finances and rest the stress falls on the company.</h2>
+                <h2>Services of Evana Infratech encompass a wide range of activities, from residential housing projects to large-scale infrastructure developments. These services involve planning, designing, and executing projects, ensuring structural integrity, safety, and adherence to local regulations. Professionals of company collaborate with architects, engineers, and other specialists to bring architectural visions to life</h2>
             </div>
             <div className={testcss.carousel}>
                 <div className={testcss.cards}>

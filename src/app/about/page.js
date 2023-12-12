@@ -9,7 +9,7 @@ export default function About() {
         <Navbar />
         <CustomHero h1={" > ABOUT >"} p={"ABOUT US"} imgSrc={'/Construction.jpg'} />
         <Section2 />
-        <Content />
+        {/* <Content /> */}
         <Section3 />
         <OurTeam />
         <Testimonial />

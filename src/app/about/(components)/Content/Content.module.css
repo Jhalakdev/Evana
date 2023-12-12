@@ -1,0 +1,23 @@
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.wrapper p {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+@media screen and (width<1100px) {
+    .wrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .wrapper {
+        width: 95%;
+    }
+}

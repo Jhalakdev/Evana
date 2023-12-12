@@ -73,7 +73,9 @@ export default function Section3() {
                 <span>EAVANA INFRATECH A CONSTRUCTION COMPANY</span>
                 <h2>Best Provider for Construction Services</h2>
                 {/* <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span> */}
-                <p>Evana Infratech was founded with the noble motive of providing the best construction services at affordable prices to clients. The company has completed hundreds of projects in multiple fields of construction. It’s a one-stop solution for all your construction-related needs. The company is led by a group of enthusiasts and professionals, who deliver the best of services.
+                {/* <p>Evana Infratech was founded with the noble motive of providing the best construction services at affordable prices to clients. The company has completed hundreds of projects in multiple fields of construction. It’s a one-stop solution for all your construction-related needs. The company is led by a group of enthusiasts and professionals, who deliver the best of services. */}
+                <p>
+                    Evana Infratech, a unit of K D Groups specializes in delivering innovative and sustainable building solutions tailored to meet diverse project needs.
                 </p>
             </div>
             <div className={sec3css.banners}>

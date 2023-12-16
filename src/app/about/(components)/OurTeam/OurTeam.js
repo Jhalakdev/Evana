@@ -68,7 +68,7 @@ export default function OurTeam() {
                     <div className={teamcss.cardText}>
 
                         <h2>Sanket Suman</h2>
-                        <span>Planing & Designing Head</span>
+                        <span>Planning & Designing Head</span>
                     </div>
                 </div>
                 <div className={teamcss.card}>

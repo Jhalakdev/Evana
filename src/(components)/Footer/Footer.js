@@ -6,7 +6,7 @@ export default function Footer() {
         <div className={footercss.footerWrapper}>
             <div className={footercss.footerList}>
                 <h2>ABOUT</h2>
-                <p>Evana Infratech is one stop solution for all types of building construction.</p>
+                <p>Evana Infratech is one stop solution for complete construction with materials</p>
                 <div className={footercss.socials}>
                     <Link href={cdata.facebook} target='blank'>
                         <div className={footercss.svgContainer}>

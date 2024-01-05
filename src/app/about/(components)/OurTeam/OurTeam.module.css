@@ -65,7 +65,9 @@
     padding-bottom: 10px;
     /* transform: translate(-50%); */
 }
-
+.cardText h2 p{
+    font-size: 11px;
+}
 .cardText h2 {
     color: white;
 }

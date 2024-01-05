@@ -46,7 +46,7 @@ export default function FAQSection() {
                     </li>
                     <li key={3}>
                         <h2>3. What will be the total cost of my building construction?</h2>
-                        <p>The cost of any building can be precisely calculated only after analysis of drawings and the requirements of the client. However, on a very broad basis, the rate varies from Rs 1600 per square feet to Rs 2000 per Square feet. Rates can even be higher depending upon different permutations and combinations. Refer to the package session for more information. </p>
+                        <p>The cost of any building can be precisely calculated only after analysis of drawings and the requirements of the client. However, on a very broad basis, the rate varies from Rs 1600 per square feet to Rs 2000 per Square feet. Rates can even be higher depending upon different permutations and combinations. Contact our team for more details. </p>
                     </li>
                     <li key={4}>
                         <h2>4. How cost of the building is calculated?</h2>
@@ -90,7 +90,7 @@ export default function FAQSection() {
                     </li>
                     <li key={14}>
                         <h2>14. Is boundary wall included in the package?</h2>
-                        <p>No. Since types of boundary walls depend on house to house, it is a standard practice to put it under extra cost head. Some buildings even do not have boundary walls and some have only 2/3-sided walls. Hence, it&apoos;s always kept under additional head.</p>
+                        <p>No. Since types of boundary walls depend on house to house, it is a standard practice to put it under extra cost head. Some buildings even do not have boundary walls and some have only 2/3-sided walls. Hence, it&apos;s always kept under additional head.</p>
                     </li>
                     <li key={15}>
                         <h2>15. What happens if I want a different brand of materials other than the ones in the packages?</h2>

@@ -6,7 +6,7 @@ export default function Sec2Ad() {
     </div>
     <div className={sec2css.adText}>
         <h2>PROVIDING PERSONALIZED AND HIGH QUALITY SERVICES</h2>
-        <p>We infuse technology into construction to make the buildings strong & durable</p>
+        <p>Evana Infratech is one stop solution for complete construction with materials</p>
         <button>REQUEST A QUOTE</button>
     </div>
 </div>

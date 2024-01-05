@@ -7,7 +7,7 @@ export default function ContactSection() {
             <div className={contactcss.text}>
                 <span>CONTACT US</span>
                 <h2>Message us for more details</h2>
-                <p> far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <p>Your message is on its way, delivered in a digital heartbeat.</p>
             </div>
             <div className={contactcss.formContainer}>
 

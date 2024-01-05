@@ -47,7 +47,7 @@ export default function Footer() {
             <div className={footercss.footerList}>
                 <h2>HAVE A QUESTION?</h2>
                 <p><strong style={{ color: 'var(--red)' }}>Ranchi:</strong> Office 2nd Floor, Madhushree Heights, Beside Central Bank, Near Meenakshi Netralaya, Harmu - 834002</p>
-                <p><strong style={{ color: 'var(--red)' }}>Pune:</strong> Office no.107, Ganesh Imperia, Opp. Omega Paradise SocietyY, Wakad - 411057</p>
+                <p><strong style={{ color: 'var(--red)' }}>Pune:</strong> Office no.107, Ganesh Imperia, Opp. Omega Paradise Society, Wakad - 411057</p>
                 <p style={{ color: 'var(--red)' }}>+91 7070333178</p>
                 <p style={{ color: 'var(--red)' }}>+91 8605183887</p>
                 <p><strong style={{ color: 'var(--red)' }}>Email:</strong> evanainfratech@gmail.com</p>

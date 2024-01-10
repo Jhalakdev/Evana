@@ -32,7 +32,7 @@ export default function OurTeam() {
                     </div>
                 </div>
                 <div className={teamcss.card}>
-                    <img src='/Prashant-Kumar.HEIC' />
+                    <img src='/Prashant-Kumar.jpg' />
                     <div className={teamcss.cardText}>
 
                         <h2>Prashant Kumar <p>B.E.(Civil), M.Tech(Construction Management)</p></h2>

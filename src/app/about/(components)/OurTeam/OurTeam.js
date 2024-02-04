@@ -64,14 +64,6 @@ export default function OurTeam() {
                     </div>
                 </div>
                 <div className={teamcss.card}>
-                    <img src='/Wasim-Ansari.jpg' />
-                    <div className={teamcss.cardText}>
-
-                        <h2>Wasim Ansari<p>BA, Diploma(Computer Networking)</p></h2>
-                        <span>Marketing & Sales Head</span>
-                    </div>
-                </div>
-                <div className={teamcss.card}>
                     <img src='/Sanket-Suman.jpg' />
                     <div className={teamcss.cardText}>
 

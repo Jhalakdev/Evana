@@ -46,8 +46,11 @@ export default function Footer() {
 
             <div className={footercss.footerList}>
                 <h2>HAVE A QUESTION?</h2>
-                <p><strong style={{ color: 'var(--red)' }}>Ranchi:</strong> Office 2nd Floor, Madhushree Heights, Beside Central Bank, Near Meenakshi Netralaya, Harmu - 834002</p>
                 <p><strong style={{ color: 'var(--red)' }}>Pune:</strong> Office no.107, Ganesh Imperia, Opp. Omega Paradise Society, Wakad - 411057</p>
+                <p><strong style={{ color: 'var(--red)' }}>Nagpur:</strong> Plot No-4A, Manewada-Wela Harichandra Road, Near Goderej Orchard Estate, Opposite to Leverage Group, Besa, Nagpur- 440034</p>
+                <p><strong style={{ color: 'var(--red)' }}>Ranchi:</strong> Office 2nd Floor, Madhushree Heights, Beside Central Bank, Near Meenakshi Netralaya, Harmu - 834002</p>
+                <p><strong style={{ color: 'var(--red)' }}>Patna:</strong>  Office NO. 102, SN MEHRA PALACE, 
+                Opp TO AN COLLEGE, BOARING ROAD, PATNA Pin - 800013</p>
                 <p><strong style={{ color: 'var(--red)' }}>Bhagalpur:</strong> Townhall, Jogsar, Adampur, Swami Vivekanand Road, Bhagalpur, 812001</p>
                 <p style={{ color: 'var(--red)' }}>+91 7070333178</p>
                 <p style={{ color: 'var(--red)' }}>+91 8605183887</p>

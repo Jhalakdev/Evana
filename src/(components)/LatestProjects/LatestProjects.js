@@ -54,7 +54,27 @@ export default function LatestProjects() {
                         <h2>Residential Building</h2>
                     </div>
                 </div>
-
+                <div className={latestcss.project}>
+                    <img src='/Project4.jpg' />
+                    <div className={latestcss.projectInfo}>
+                        <span>Commercial</span>
+                        <h2>Residential Building</h2>
+                    </div>
+                </div>
+                <div className={latestcss.project}>
+                    <img src='/Project5.jpg' />
+                    <div className={latestcss.projectInfo}>
+                        <span>Building</span>
+                        <h2>Residential Building</h2>
+                    </div>
+                </div>
+                <div className={latestcss.project}>
+                    <img src='/Project6.jpg' />
+                    <div className={latestcss.projectInfo}>
+                        <span>Building</span>
+                        <h2>Residential Building</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

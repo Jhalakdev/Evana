@@ -59,7 +59,7 @@ export default function InquiryForm() {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5000/api/v1/auth/inquire', {
+            const response = await fetch('https://evana.onrender.com/api/v1/auth/inquire', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

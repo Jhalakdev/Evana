@@ -1,6 +1,8 @@
-'use client'
+'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import data from '../datas/Contact';
 import contactcss from './ContactSection.module.css';
 
@@ -12,8 +14,6 @@ export default function ContactSection() {
         message: ''
     });
 
-    const [responseMessage, setResponseMessage] = useState(null);
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -23,7 +23,6 @@ export default function ContactSection() {
     };
 
     const handleSubmit = async (e) => {
-        console.log(formData)
         e.preventDefault();
         try {
             const response = await fetch('https://evana.onrender.com/api/v1/auth/feedback', {
@@ -34,17 +33,19 @@ export default function ContactSection() {
                 body: JSON.stringify(formData)
             });
             const data = await response.json();
-            setResponseMessage(data.message);
             if (data.success) {
+                toast.success(data.message || 'Feedback submitted successfully!');
                 setFormData({
                     name: '',
                     email: '',
                     subject: '',
                     message: ''
                 });
+            } else {
+                toast.error(data.message || 'Error submitting feedback');
             }
         } catch (error) {
-            setResponseMessage('Error submitting feedback');
+            toast.error('Error submitting feedback');
         }
     };
 
@@ -89,7 +90,6 @@ export default function ContactSection() {
                             onChange={handleChange}
                         />
                         <button type="submit">SEND MESSAGE</button>
-                        {responseMessage && <p>{responseMessage}</p>}
                     </form>
                     <div className={contactcss.info}>
                         <div className={contactcss.infoCard}>
@@ -160,7 +160,7 @@ export default function ContactSection() {
                                         height="16"
                                         width="16"
                                         viewBox="0 0 512 512">
-                                        <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zM451 128H338.3c15.1 27.8 26.8 58.8 34.8 92.1 4.4 18.3 8 37.5 10.6 57.1H494.6c-7.3-55-33.7-104.3-73.6-140.5zM325.7 128H186.3c21.5 48 33.8 104.7 36.3 164.1H301c2.5-59.4 14.8-116.1 36.3-164.1zM253 128H161c-18.4 32.8-32 69.1-39.5 108.4-3.6 18.7-6.3 38.2-8 57.6H203.6c2.6-19.6 6.2-38.9 10.6-57.1C226.2 186.8 237.9 155.8 253 128zM173.7 128H61C21.1 164.2-5.3 213.5-12.6 268.5h111.2c2.5-19.6 6.2-38.9 10.6-57.1C147 186.8 158.6 155.8 173.7 128zM8.1 320c5.3-20.5 8.1-41.9 8.1-64s-2.8-43.5-8.1-64H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1zm41.9 128H173.7c-15.1-27.8-26.8-58.8-34.8-92.1-4.4-18.3-8-37.5-10.6-57.1H17.4c7.3 55 33.7 104.3 73.6 140.5zm123.4 0H325.7c-21.5-48-33.8-104.7-36.3-164.1H216.3c-2.5 59.4-14.8 116.1-36.3 164.1zm72.7 0H338.3c18.4-32.8 32-69.1 39.5-108.4 3.6-18.7 6.3-38.2 8-57.6H308.4c-2.6 19.6-6.2 38.9-10.6 57.1C285.8 325.2 274.1 356.2 258.7 384zM138.3 384H61c39.9 36.2 89.3 62.6 144.5 69.9-8.1-33.3-19.8-64.3-34.9-92.1zm168.3 0h115.4c-39.9 36.2-89.3 62.6-144.5 69.9 8.1-33.3 19.8-64.3 34.9-92.1zm152.1 32h-115.4c15.1 27.8 26.8 58.8 34.8 92.1 55.2-7.3 104.6-33.7 144.5-69.9z" />
+                                        <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.3 80H131.7c-15.7-20.4-27.7-43.4-34.5-68.3H61.5c-7.5 30.2-11.3 60.4-11.3 90.8s3.8 60.6 11.3 90.8h35.6c6.8-24.9 18.8-47.9 34.5-68.3h248.6c15.7 20.4 27.7 43.4 34.5 68.3h35.6c7.5-30.2 11.3-60.4 11.3-90.8s-3.8-60.6-11.3-90.8h-35.6c-6.8 24.9-18.8 47.9-34.5 68.3zM423 144H89c-2.5 6.7-5.2 13.3-8.2 20h255c3.1-6.7 5.7-13.3 8.2-20zm-40.4-32H124.4c-10.7-17.4-25.3-33.2-42.5-46.5h298.6c17.2 13.3 31.8 29.1 42.5 46.5zm90.8-32H425.7c-10.7-17.4-25.3-33.2-42.5-46.5h56.8c14.4 0 27.7 8.2 34.5 20.8s8.2 28.5 0 41.5c-6.8 12.6-20.1 20.8-34.5 20.8h-90.8c-10.7-17.4-25.3-33.2-42.5-46.5h-56.8c-14.4 0-27.7-8.2-34.5-20.8s-8.2-28.5 0-41.5c6.8-12.6 20.1-20.8 34.5-20.8h56.8c17.2 13.3 31.8 29.1 42.5 46.5z" />
                                     </svg>
                                 </div>
                                 <div>
@@ -172,6 +172,7 @@ export default function ContactSection() {
                     </div>
                 </div>
             </div>
+            <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
         </section>
-    );
+    )
 }
